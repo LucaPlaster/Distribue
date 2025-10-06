@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consulo HTML Template Documentation</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="d-flex align-items-center">
+      <div class="header-wrapper">
+        <div class="container-fluid">
+          <div
+            class="header-grid d-flex gap-4 align-items-center justify-content-between bg-white rounded-3 px-3 py-3 px-lg-4"
+          >
+            <a class="header-logo d-flex align-items-center" href="index.html">
+              <img src="images/logo.png" alt="Logo" />
+            </a>
+
+            <div class="header-actions d-flex gap-4">
+              <a
+                href="https://themeforest.net/user/spreethemes/portfolio"
+                class="header-link btn btn-primary"
+                >Support</a
+              >
+              <drawer-opener
+                class="header-link hamburger text-dark d-xl-none"
+                data-drawer=".drawer-menu"
+              >
+                <div class="svg-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </div>
+              </drawer-opener>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-12 col-sidebar">
+            <drawer-menu>
+              <aside class="drawer-menu sidebar rounded-3 bg-white p-4">
+                <drawer-opener
+                  class="header-link d-flex justify-content-end align-items-center text-dark d-xl-none mb-3"
+                  data-drawer=".drawer-menu"
+                >
+                  <div class="svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                  </div>
+                </drawer-opener>
+                <ul
+                  id="scrollspy-content"
+                  class="scrollspy-menu list-group list-unstyled"
+                >
+                  <li class="py-3 border-bottom">
+                    <a href="#Introduction">Introduction</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#HTMLStructure">HTML Structure</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#RequiredFile">Required Files</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#CSSFiles">CSS Files and Structure</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#Javascript">Javascript</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#Logo">Logo</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#ContactForm">Contact Form Settings</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#About">About Us</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#Footer">Footer</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#CopyRight">Copy Right</a>
+                  </li>
+                  <li class="py-3 border-bottom">
+                    <a href="#SourcesCredits">Sources and Credits</a>
+                  </li>
+                  <li class="py-3">
+                    <a href="#Support">Support</a>
+                  </li>
+                  <!-- <li class="py-3 border-bottom">
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#collapseExample"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    Introduction
+                  </a>
+
+                  <ul class="collapse list-unstyled" id="collapseExample">
+                    <li class="py-3 border-bottom">
+                      <a href="#simple-list-item-2"> Item 2 </a>
+                    </li>
+                    <li class="pt-3">
+                      <a href="#simple-list-item-3"> Item 3 </a>
+                    </li>
+                  </ul>
+                </li> -->
+                </ul>
+              </aside>
+            </drawer-menu>
+          </div>
+          <div class="col-12 col-content">
+            <div class="content rounded-3 bg-white p-lg-5 p-3">
+              <div
+                data-bs-spy="scroll"
+                data-bs-target="#scrollspy-content"
+                data-bs-offset="0"
+                data-bs-smooth-scroll="true"
+                tabindex="0"
+              >
+                <div id="Introduction" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">Introduction</h2>
+                  <div class="py-4">
+                    <p>
+                      Welcome to the documentation of the
+                      <strong>Consulo HTML Template</strong>. We tried to cover
+                      all the important features and settings of this html
+                      template. Browse through the menu sections or email us at
+                      <a href="mailto:spreethemes@gmail.com">
+                        spreethemes@gmail.com
+                      </a>
+                    </p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <strong>🎯 Template Name:</strong> Consulo Creative
+                        Business Consulting Template
+                      </li>
+                      <li><strong>🛷 Version:</strong> 1.0.1</li>
+                      <li><strong>🥅 Framework:</strong> Bootstrap v5.3</li>
+                      <li>
+                        <strong>📢 Developed By:</strong>
+                        <a
+                          href="https://themeforest.net/user/spreethemes/portfolio"
+                          target="_blank"
+                        >
+                          SpreeThemes
+                        </a>
+                      </li>
+                      <li>
+                        <strong>📬 Support:</strong>
+                        <a href="mailto:spreethemes@gmail.com">
+                          spreethemes@gmail.com
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="HTMLStructure" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">
+                    HTML Structure
+                  </h2>
+                  <div class="py-4">
+                    <p>
+                      The html template uses Latest Bootstrap v5.3 with valid HTML5
+                      tags. This template is a responisve layout with 4 column
+                      Support column. All of the information in content area is
+                      nested within a class and comes with predefined classes.
+                    </p>
+                    <h5 class="pt-2">Code:</h5>
+                    <img src="images/html.png" />
+                    <h5 class="pt-5">Output:</h5>
+                    <img src="images/slider.png" />
+                  </div>
+                </div>
+
+                <div id="RequiredFile" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">
+                    Required Files
+                  </h2>
+                  <div class="py-4">
+                    <h5 class="pt-2">CSS files:</h5>
+                    <img src="images/css.png" />
+                    <h5 class="pt-5">JS files:</h5>
+                    <img src="images/js-file.png" />
+                  </div>
+                </div>
+
+                <div id="CSSFiles" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">
+                    CSS Files and Structure
+                  </h2>
+
+                  <div class="py-4">
+                    <strong>
+                      There are some CSS files are used in this template.
+                    </strong>
+                    <p>
+                      If you would like to edit a specific section of the site,
+                      simply find the appropriate label in the CSS file, and
+                      then scroll down until you find the appropriate style that
+                      needs to be edited.
+                    </p>
+                    <strong class="d-block mt-2 mb-4">
+                      We used SASS for better productivity
+                    </strong>
+                    <img src="images/scss.png" />
+                  </div>
+                </div>
+
+                <div id="Javascript" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">Javascript</h2>
+                  <div class="py-4">
+                    <p>
+                      To improve the page speed, we used vanilla Javascript with
+                      modern syntax. This boost up the website loading speed and
+                      ensure the best performance.
+                    </p>
+                    <strong class="d-block mt-2 mb-4">
+                      This template imports the following Javascript files-
+                    </strong>
+                    <ol>
+                      <li>
+                        <a href="https://swiperjs.com/" target="_blank">
+                          <strong>Swiper Slider: </strong>
+                        </a>
+                        <span>The Most Modern Mobile Touch Slider</span>
+                      </li>
+                      <li>
+                        <a href="https://michalsnik.github.io/aos/">
+                          <strong>AOS: </strong>
+                        </a>
+                        <span>Animate on scroll library</span>
+                      </li>
+                    </ol>
+                    <img src="images/js.png" />
+                  </div>
+                </div>
+
+                <div id="Logo" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">Logo</h2>
+                  <div class="py-4">
+                    <h5 class="pt-2">Code:</h5>
+                    <img src="images/logo-code.png" />
+                    <h5 class="pt-5">Output:</h5>
+                    <img src="images/logo-output.png" />
+                  </div>
+                </div>
+
+                <div id="ContactForm" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">
+                    Contact Form Settings
+                  </h2>
+                  <div class="py-4">
+                    <h5 class="pt-2">Code:</h5>
+                    <img src="images/contact.png" />
+                    <h5 class="pt-5">Output:</h5>
+                    <img src="images/contact-output.png" />
+                  </div>
+                </div>
+
+                <div id="About" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">About Us</h2>
+                  <div class="py-4">
+                    <h5 class="pt-2">Code:</h5>
+                    <img src="images/about.png" />
+                    <h5 class="pt-5">Output:</h5>
+                    <img src="images/about-output.png" />
+                  </div>
+                </div>
+
+                <div id="Footer" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">Footer</h2>
+                  <div class="py-4">
+                    <h5 class="pt-2">Code:</h5>
+                    <img src="images/footer.png" />
+                    <h5 class="pt-5">Output:</h5>
+                    <img src="images/footer-output.png" />
+                  </div>
+                </div>
+
+                <div id="CopyRight" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">Copy Right</h2>
+                  <div class="py-4">
+                    <h5 class="pt-2">Code:</h5>
+                    <img src="images/copyright.png" />
+                    <h5 class="pt-5">Output:</h5>
+                    <img src="images/copyright-output.png" />
+                  </div>
+                </div>
+
+                <div id="SourcesCredits" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">
+                    Sources and Credits
+                  </h2>
+                  <div class="py-4">
+                    <p>
+                      Fonts Used int the template are google fonts, you can find
+                      template on Google Fonts API
+                    </p>
+                    <strong>Fonts Used:</strong>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://fonts.google.com/specimen/Inter"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >Inter</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://fonts.google.com/specimen/Poppins"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >Poppins</a
+                        >
+                      </li>
+                    </ul>
+                    <strong>CSS Framework Used:</strong>
+                    <ul>
+                      <li><a href="https://getbootstrap.com/" target="_blank">Bootsrap v5.3</a></li>
+                    </ul>
+                    <strong>SVG icons Used:</strong>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://heroicons.com/"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >Hero Icons</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.svgrepo.com/"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >SVG Repo</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.flaticon.com/"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >Flaticon</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://iconify.design/"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >Iconify</a
+                        >
+                      </li>
+                    </ul>
+                    <strong>Images & Illustration Used:</strong>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.freepik.com/"
+                          rel="nofollow"
+                          target="_blank"
+                          class="text-decoration-none"
+                        >
+                          Freepik
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://unsplash.com/"
+                          rel="nofollow"
+                          target="_blank"
+                          class="text-decoration-none"
+                        >
+                          Unsplash
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.pexels.com/"
+                          rel="nofollow"
+                          target="_blank"
+                          class="text-decoration-none"
+                        >
+                          Pexels
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="Support" class="section">
+                  <h2 class="bg-primary-subtle p-4 rounded-2">Support</h2>
+                  <div class="py-4">
+                    <p>
+                      Once again, thank you so much for purchasing this
+                      template. As we said at the beginning, we'd be glad to
+                      help you if you have any questions relating to this
+                      template. No guarantees, but we'll do our best to assist.
+                      If you have any queries, please feel free to contact us at
+                      <a
+                        href="https://themeforest.net/user/spreethemes/portfolio"
+                        target="_blank"
+                        >Support Center</a
+                      >
+                      or email us at
+                      <a href="mailto:spreethemes@gmail.com">
+                        spreethemes@gmail.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
